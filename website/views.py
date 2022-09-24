@@ -3,12 +3,12 @@ from django.http import HttpResponse
 
 
 def index_view(request):
-    return HttpResponse('amaliyat home')
+    return render(request, 'website/index.html')
 
 
 def about_view(request):
-    return HttpResponse('aghaz about')
+    return render(request,'website/about.html')
 
 
 def contact_view(request):
-    return HttpResponse('aghaz contact')
+    return render(request,'website/contact.html')
