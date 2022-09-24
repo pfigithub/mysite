@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from mysite.view import ht_test
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ht_test', ht_test)
 ]
