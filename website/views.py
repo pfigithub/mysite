@@ -1,0 +1,14 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+def index_view(request):
+    return HttpResponse('amaliyat home')
+
+
+def about_view(request):
+    return HttpResponse('aghaz about')
+
+
+def contact_view(request):
+    return HttpResponse('aghaz contact')
